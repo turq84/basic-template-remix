@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  reverse-proxy:
+    build:
+      context: ./reverse-proxy
+    ports:
+      - '80:80'
+      - '443:443'
+    depends_on:
+      # - pgbouncer
+      - client
+    networks:
+      - frontend
+      - backend
+
+  # # PgBouncer as a Proxy to Google Cloud SQL
+  # pgbouncer:
+  #   image: edoburu/pgbouncer:latest
+  #   environment:
+  #     # Using environment variables to configure DB host and credentials
+  #     DB_HOST: ${DB_HOST}
+  #     DB_PORT: 5432
+  #     DB_USER: ${DB_USER}
+  #     DB_PASSWORD: ${DB_PASSWORD}
+  #     DB_NAME: ${DB_NAME}
+  #   volumes:
+  #     - ./pgbouncer/pgbouncer.ini:/etc/pgbouncer/pgbouncer.ini
+  #     - ./pgbouncer/userlist.txt:/etc/pgbouncer/userlist.txt
+  #   ports:
+  #     - '5432:5432'
+  #   networks:
+  #     - backend
+  #   restart: unless-stopped
+
+  # Product app configuration
+  client:
+    build:
+      context: ./client
+    # environment:
+    #   DATABASE_URL: postgres://${DB_USER}:${DB_PASSWORD}@pgbouncer:5432/${DB_NAME}
+    ports:
+      - '3000:3000'
+    networks:
+      - backend
+    restart: unless-stopped
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge

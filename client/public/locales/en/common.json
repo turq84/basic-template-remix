@@ -1,0 +1,12 @@
+{
+  "greeting": "Hello",
+  "close": "Close",
+  "clear": "Clear",
+  "confirm": "Confirm",
+  "errorMessage": "Something went wrong",
+  "noOptions": "No options found",
+  "searchOptions": "Search options",
+  "form": {
+    "showPassword": "Show password"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "greeting": "Moi",
+  "close": "Sulje",
+  "clear": "Tyhjennä",
+  "clearFilter": "Tyhjennä hakusuodatin",
+  "confirm": "Vahvista",
+  "errorMessage": "Something went wrong",
+  "noOptions": "No options found",
+  "searchOptions": "Hae vaihtoehtoja",
+  "form": {
+    "showPassword": "Näytä salasana"
+  }
+}

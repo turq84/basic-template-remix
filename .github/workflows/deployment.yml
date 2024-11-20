@@ -1,0 +1,176 @@
+name: 🚀 Deploy
+on:
+  push:
+    branches:
+      - master
+      - dev
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  changes:
+    name: Check for deployable changes
+    runs-on: ubuntu-latest
+    outputs:
+      DEPLOYABLE: ${{ steps.check.outputs.DEPLOYABLE }}
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 📥 Check for deployable changes
+        id: check
+        run: |
+          # Put your logic here for checking deployable changes
+          echo "::set-output name=DEPLOYABLE::true"
+
+  lint:
+    name: ⬣ ESLint
+    needs: [changes]
+    if: needs.changes.outputs.DEPLOYABLE == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Cache node modules
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            client/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: 📥 Install dependencies in root folder
+        run: npm install
+
+      - name: 📥 Install dependencies in client folder
+        run: |
+          cd client
+          npm install
+
+      - name: 🔬 Lint
+        run: npm run eslint
+
+  typecheck:
+    name: ʦ TypeScript
+    needs: [changes]
+    if: needs.changes.outputs.DEPLOYABLE == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install dependencies in root folder (no cache step here)
+      - name: 📥 Install dependencies in root folder
+        run: npm install
+
+      # Install dependencies in client folder
+      - name: 📥 Install dependencies in client folder
+        run: |
+          cd client
+          npm install
+
+      # Run typecheck in the client folder
+      - name: 🔎 Type check
+        run: npm run typecheck
+
+  accessibility-check:
+    name: 🧑‍🦯 Pa11y Accessibility Check (Localhost)
+    runs-on: ubuntu-latest
+    services:
+      web:
+        image: node:20
+        options: --privileged
+        ports:
+          - 5173:5173
+
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📥 Install dependencies in root
+        run: npm install
+
+      - name: 📥 Install dependencies in client folder
+        run: |
+          cd client
+          npm install
+
+      - name: 🏃‍♀️ Start dev server in client folder
+        run: |
+          cd client
+          npm run dev &
+          # Giving it some time to start up
+          sleep 10
+
+      - name: 📝 Collect URLs
+        run: node workflow-scripts/collect-paths.js
+
+      - name: 🧑‍🦯 Run Pa11y Accessibility Check on Localhost
+        id: accessibility_check
+        run: |
+          urls=$(cat client/urls.json)
+          total_urls=$(echo "$urls" | jq length)
+          passing_urls=0
+          failing_urls=0
+
+          # Collect accessibility issues for each URL
+          for url in $(echo "$urls" | jq -r '.[]'); do
+            echo "Running Pa11y on $url"
+            result=$(npx pa11y "http://localhost:5173$url")
+            
+            # If Pa11y finds "No issues found!", consider the URL as passing
+            if [[ "$result" == *"No issues found!"* ]]; then
+              passing_urls=$((passing_urls+1))
+            else
+              # If there are accessibility issues, log them and consider the URL as failing
+              echo "Pa11y found issues on $url:"
+              echo "$result"
+              failing_urls=$((failing_urls+1))
+            fi
+          done
+
+          # Calculate percentage of passing URLs
+          passing_percentage=$(( (passing_urls * 100) / total_urls ))
+
+          echo "Total URLs: $total_urls"
+          echo "Passing URLs: $passing_urls"
+          echo "Failing URLs: $failing_urls"
+          echo "Passing Percentage: $passing_percentage%"
+
+          # If less than 80% are passing, fail the workflow and show the issues
+          if [ "$passing_percentage" -ge 80 ]; then
+            echo "🟢 Accessibility check passed with $passing_percentage% passing."
+          else
+            echo "🔴 Accessibility check failed. Only $passing_percentage% passed."
+            echo "There were accessibility issues on the following URLs:"
+            for url in $(echo "$urls" | jq -r '.[]'); do
+              result=$(npx pa11y "http://localhost:5173$url")
+              if [[ "$result" != *"No issues found!"* ]]; then
+                echo "$url:"
+                echo "$result"
+              fi
+            done
+            exit 1  # Fail the workflow if less than 80% passed
+          fi

@@ -1,0 +1,716 @@
+{
+  "v": 5,
+  "entries": {
+    "asyncselect--with-multi-select": {
+      "type": "story",
+      "id": "asyncselect--with-multi-select",
+      "name": "With Multi Select",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "asyncselect--with-single-select": {
+      "type": "story",
+      "id": "asyncselect--with-single-select",
+      "name": "With Single Select",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "asyncselect--disabled": {
+      "type": "story",
+      "id": "asyncselect--disabled",
+      "name": "Disabled",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "asyncselect--with-icon": {
+      "type": "story",
+      "id": "asyncselect--with-icon",
+      "name": "With Icon",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "asyncselect--with-description": {
+      "type": "story",
+      "id": "asyncselect--with-description",
+      "name": "With Description",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "asyncselect--with-error": {
+      "type": "story",
+      "id": "asyncselect--with-error",
+      "name": "With Error",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "asyncselect--with-clearing": {
+      "type": "story",
+      "id": "asyncselect--with-clearing",
+      "name": "With Clearing",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "asyncselect--with-clear-and-confirm": {
+      "type": "story",
+      "id": "asyncselect--with-clear-and-confirm",
+      "name": "With Clear And Confirm",
+      "title": "AsyncSelect",
+      "importPath": "./app/components/uikit/AsyncSelect/AsyncSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "button--variations": {
+      "type": "story",
+      "id": "button--variations",
+      "name": "Variations",
+      "title": "Button",
+      "importPath": "./app/components/uikit/Button/Button.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "button--sizes": {
+      "type": "story",
+      "id": "button--sizes",
+      "name": "Sizes",
+      "title": "Button",
+      "importPath": "./app/components/uikit/Button/Button.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "button--with-icon": {
+      "type": "story",
+      "id": "button--with-icon",
+      "name": "With Icon",
+      "title": "Button",
+      "importPath": "./app/components/uikit/Button/Button.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "button--loading": {
+      "type": "story",
+      "id": "button--loading",
+      "name": "Loading",
+      "title": "Button",
+      "importPath": "./app/components/uikit/Button/Button.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "button--disabled": {
+      "type": "story",
+      "id": "button--disabled",
+      "name": "Disabled",
+      "title": "Button",
+      "importPath": "./app/components/uikit/Button/Button.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "checkbox--regular": {
+      "type": "story",
+      "id": "checkbox--regular",
+      "name": "Regular",
+      "title": "Checkbox",
+      "importPath": "./app/components/uikit/Checkbox/Checkbox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "checkbox--component-label": {
+      "type": "story",
+      "id": "checkbox--component-label",
+      "name": "Component Label",
+      "title": "Checkbox",
+      "importPath": "./app/components/uikit/Checkbox/Checkbox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "checkbox--hidden-label": {
+      "type": "story",
+      "id": "checkbox--hidden-label",
+      "name": "Hidden Label",
+      "title": "Checkbox",
+      "importPath": "./app/components/uikit/Checkbox/Checkbox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "checkbox--outer-label": {
+      "type": "story",
+      "id": "checkbox--outer-label",
+      "name": "Outer Label",
+      "title": "Checkbox",
+      "importPath": "./app/components/uikit/Checkbox/Checkbox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "checkbox--disabled": {
+      "type": "story",
+      "id": "checkbox--disabled",
+      "name": "Disabled",
+      "title": "Checkbox",
+      "importPath": "./app/components/uikit/Checkbox/Checkbox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "checkbox--invalid": {
+      "type": "story",
+      "id": "checkbox--invalid",
+      "name": "Invalid",
+      "title": "Checkbox",
+      "importPath": "./app/components/uikit/Checkbox/Checkbox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "checkbox--indeterminate": {
+      "type": "story",
+      "id": "checkbox--indeterminate",
+      "name": "Indeterminate",
+      "title": "Checkbox",
+      "importPath": "./app/components/uikit/Checkbox/Checkbox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "combobox--regular": {
+      "type": "story",
+      "id": "combobox--regular",
+      "name": "Regular",
+      "title": "ComboBox",
+      "importPath": "./app/components/uikit/ComboBox/ComboBox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "combobox--disabled": {
+      "type": "story",
+      "id": "combobox--disabled",
+      "name": "Disabled",
+      "title": "ComboBox",
+      "importPath": "./app/components/uikit/ComboBox/ComboBox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "combobox--required": {
+      "type": "story",
+      "id": "combobox--required",
+      "name": "Required",
+      "title": "ComboBox",
+      "importPath": "./app/components/uikit/ComboBox/ComboBox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "combobox--with-icon": {
+      "type": "story",
+      "id": "combobox--with-icon",
+      "name": "With Icon",
+      "title": "ComboBox",
+      "importPath": "./app/components/uikit/ComboBox/ComboBox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "combobox--with-description": {
+      "type": "story",
+      "id": "combobox--with-description",
+      "name": "With Description",
+      "title": "ComboBox",
+      "importPath": "./app/components/uikit/ComboBox/ComboBox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "combobox--with-error-message": {
+      "type": "story",
+      "id": "combobox--with-error-message",
+      "name": "With Error Message",
+      "title": "ComboBox",
+      "importPath": "./app/components/uikit/ComboBox/ComboBox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "combobox--async-options": {
+      "type": "story",
+      "id": "combobox--async-options",
+      "name": "Async Options",
+      "title": "ComboBox",
+      "importPath": "./app/components/uikit/ComboBox/ComboBox.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "dialog--full": {
+      "type": "story",
+      "id": "dialog--full",
+      "name": "Full",
+      "title": "Dialog",
+      "importPath": "./app/components/uikit/Dialog/Dialog.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "dialog--basic": {
+      "type": "story",
+      "id": "dialog--basic",
+      "name": "Basic",
+      "title": "Dialog",
+      "importPath": "./app/components/uikit/Dialog/Dialog.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "dialog--custom-header": {
+      "type": "story",
+      "id": "dialog--custom-header",
+      "name": "Custom Header",
+      "title": "Dialog",
+      "importPath": "./app/components/uikit/Dialog/Dialog.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "icon--all": {
+      "type": "story",
+      "id": "icon--all",
+      "name": "All",
+      "title": "Icon",
+      "importPath": "./app/components/uikit/Icon/Icon.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "iconbutton--variant": {
+      "type": "story",
+      "id": "iconbutton--variant",
+      "name": "Variant",
+      "title": "IconButton",
+      "importPath": "./app/components/uikit/IconButton/IconButton.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "iconbutton--color": {
+      "type": "story",
+      "id": "iconbutton--color",
+      "name": "Color",
+      "title": "IconButton",
+      "importPath": "./app/components/uikit/IconButton/IconButton.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "iconbutton--size": {
+      "type": "story",
+      "id": "iconbutton--size",
+      "name": "Size",
+      "title": "IconButton",
+      "importPath": "./app/components/uikit/IconButton/IconButton.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "iconbutton--tooltip": {
+      "type": "story",
+      "id": "iconbutton--tooltip",
+      "name": "Tooltip",
+      "title": "IconButton",
+      "importPath": "./app/components/uikit/IconButton/IconButton.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "menu--default": {
+      "type": "story",
+      "id": "menu--default",
+      "name": "Default",
+      "title": "Menu",
+      "importPath": "./app/components/uikit/Menu/Menu.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "menu--sections": {
+      "type": "story",
+      "id": "menu--sections",
+      "name": "Sections",
+      "title": "Menu",
+      "importPath": "./app/components/uikit/Menu/Menu.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "menu--selection": {
+      "type": "story",
+      "id": "menu--selection",
+      "name": "Selection",
+      "title": "Menu",
+      "importPath": "./app/components/uikit/Menu/Menu.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--regular": {
+      "type": "story",
+      "id": "multiselect--regular",
+      "name": "Regular",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--disabled": {
+      "type": "story",
+      "id": "multiselect--disabled",
+      "name": "Disabled",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--required": {
+      "type": "story",
+      "id": "multiselect--required",
+      "name": "Required",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--with-icon": {
+      "type": "story",
+      "id": "multiselect--with-icon",
+      "name": "With Icon",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--with-description": {
+      "type": "story",
+      "id": "multiselect--with-description",
+      "name": "With Description",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--with-error": {
+      "type": "story",
+      "id": "multiselect--with-error",
+      "name": "With Error",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--with-clearing": {
+      "type": "story",
+      "id": "multiselect--with-clearing",
+      "name": "With Clearing",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--with-clear-and-confirm": {
+      "type": "story",
+      "id": "multiselect--with-clear-and-confirm",
+      "name": "With Clear And Confirm",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "multiselect--with-filtering": {
+      "type": "story",
+      "id": "multiselect--with-filtering",
+      "name": "With Filtering",
+      "title": "MultiSelect",
+      "importPath": "./app/components/uikit/MultiSelect/MultiSelect.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "popover--top": {
+      "type": "story",
+      "id": "popover--top",
+      "name": "Top",
+      "title": "Popover",
+      "importPath": "./app/components/uikit/Popover/Popover.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "popover--bottom": {
+      "type": "story",
+      "id": "popover--bottom",
+      "name": "Bottom",
+      "title": "Popover",
+      "importPath": "./app/components/uikit/Popover/Popover.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "popover--left": {
+      "type": "story",
+      "id": "popover--left",
+      "name": "Left",
+      "title": "Popover",
+      "importPath": "./app/components/uikit/Popover/Popover.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "popover--right": {
+      "type": "story",
+      "id": "popover--right",
+      "name": "Right",
+      "title": "Popover",
+      "importPath": "./app/components/uikit/Popover/Popover.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "popover--custom-trigger": {
+      "type": "story",
+      "id": "popover--custom-trigger",
+      "name": "Custom Trigger",
+      "title": "Popover",
+      "importPath": "./app/components/uikit/Popover/Popover.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "select--regular": {
+      "type": "story",
+      "id": "select--regular",
+      "name": "Regular",
+      "title": "Select",
+      "importPath": "./app/components/uikit/Select/Select.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "select--disabled": {
+      "type": "story",
+      "id": "select--disabled",
+      "name": "Disabled",
+      "title": "Select",
+      "importPath": "./app/components/uikit/Select/Select.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "select--required": {
+      "type": "story",
+      "id": "select--required",
+      "name": "Required",
+      "title": "Select",
+      "importPath": "./app/components/uikit/Select/Select.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "select--with-icon": {
+      "type": "story",
+      "id": "select--with-icon",
+      "name": "With Icon",
+      "title": "Select",
+      "importPath": "./app/components/uikit/Select/Select.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "select--with-description": {
+      "type": "story",
+      "id": "select--with-description",
+      "name": "With Description",
+      "title": "Select",
+      "importPath": "./app/components/uikit/Select/Select.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "select--with-error": {
+      "type": "story",
+      "id": "select--with-error",
+      "name": "With Error",
+      "title": "Select",
+      "importPath": "./app/components/uikit/Select/Select.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "spinner--color": {
+      "type": "story",
+      "id": "spinner--color",
+      "name": "Color",
+      "title": "Spinner",
+      "importPath": "./app/components/uikit/Spinner/Spinner.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "spinner--sizes": {
+      "type": "story",
+      "id": "spinner--sizes",
+      "name": "Sizes",
+      "title": "Spinner",
+      "importPath": "./app/components/uikit/Spinner/Spinner.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "text--all-variants": {
+      "type": "story",
+      "id": "text--all-variants",
+      "name": "All Variants",
+      "title": "Text",
+      "importPath": "./app/components/uikit/Text/index.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textarea--regular": {
+      "type": "story",
+      "id": "textarea--regular",
+      "name": "Regular",
+      "title": "TextArea",
+      "importPath": "./app/components/uikit/TextArea/TextArea.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textarea--disabled": {
+      "type": "story",
+      "id": "textarea--disabled",
+      "name": "Disabled",
+      "title": "TextArea",
+      "importPath": "./app/components/uikit/TextArea/TextArea.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textarea--required": {
+      "type": "story",
+      "id": "textarea--required",
+      "name": "Required",
+      "title": "TextArea",
+      "importPath": "./app/components/uikit/TextArea/TextArea.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textarea--with-description": {
+      "type": "story",
+      "id": "textarea--with-description",
+      "name": "With Description",
+      "title": "TextArea",
+      "importPath": "./app/components/uikit/TextArea/TextArea.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textarea--with-error": {
+      "type": "story",
+      "id": "textarea--with-error",
+      "name": "With Error",
+      "title": "TextArea",
+      "importPath": "./app/components/uikit/TextArea/TextArea.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textarea--auto-resize": {
+      "type": "story",
+      "id": "textarea--auto-resize",
+      "name": "Auto Resize",
+      "title": "TextArea",
+      "importPath": "./app/components/uikit/TextArea/TextArea.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textinput--regular": {
+      "type": "story",
+      "id": "textinput--regular",
+      "name": "Regular",
+      "title": "TextInput",
+      "importPath": "./app/components/uikit/TextInput/TextInput.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textinput--disabled": {
+      "type": "story",
+      "id": "textinput--disabled",
+      "name": "Disabled",
+      "title": "TextInput",
+      "importPath": "./app/components/uikit/TextInput/TextInput.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textinput--required": {
+      "type": "story",
+      "id": "textinput--required",
+      "name": "Required",
+      "title": "TextInput",
+      "importPath": "./app/components/uikit/TextInput/TextInput.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textinput--with-description": {
+      "type": "story",
+      "id": "textinput--with-description",
+      "name": "With Description",
+      "title": "TextInput",
+      "importPath": "./app/components/uikit/TextInput/TextInput.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textinput--with-error": {
+      "type": "story",
+      "id": "textinput--with-error",
+      "name": "With Error",
+      "title": "TextInput",
+      "importPath": "./app/components/uikit/TextInput/TextInput.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textinput--with-icon": {
+      "type": "story",
+      "id": "textinput--with-icon",
+      "name": "With Icon",
+      "title": "TextInput",
+      "importPath": "./app/components/uikit/TextInput/TextInput.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "textinput--password": {
+      "type": "story",
+      "id": "textinput--password",
+      "name": "Password",
+      "title": "TextInput",
+      "importPath": "./app/components/uikit/TextInput/TextInput.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "tooltip--top": {
+      "type": "story",
+      "id": "tooltip--top",
+      "name": "Top",
+      "title": "Tooltip",
+      "importPath": "./app/components/uikit/Tooltip/Tooltip.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "tooltip--bottom": {
+      "type": "story",
+      "id": "tooltip--bottom",
+      "name": "Bottom",
+      "title": "Tooltip",
+      "importPath": "./app/components/uikit/Tooltip/Tooltip.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "tooltip--left": {
+      "type": "story",
+      "id": "tooltip--left",
+      "name": "Left",
+      "title": "Tooltip",
+      "importPath": "./app/components/uikit/Tooltip/Tooltip.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "tooltip--right": {
+      "type": "story",
+      "id": "tooltip--right",
+      "name": "Right",
+      "title": "Tooltip",
+      "importPath": "./app/components/uikit/Tooltip/Tooltip.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    },
+    "tooltip--custom-trigger": {
+      "type": "story",
+      "id": "tooltip--custom-trigger",
+      "name": "Custom Trigger",
+      "title": "Tooltip",
+      "importPath": "./app/components/uikit/Tooltip/Tooltip.stories.tsx",
+      "componentPath": "./app/components/uikit/index.ts",
+      "tags": ["dev", "test"]
+    }
+  }
+}
